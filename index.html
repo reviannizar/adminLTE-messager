@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>adminLTE Message</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="//almsaeedstudio.com/themes/AdminLTE/dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="assets/css/lte.messager.min.css"/>
+<style>
+body{font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:14px}
+</style>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="assets/js/lte.messager.js"></script>
+<script type="text/javascript">
+
+$(function() {
+	$('#ibtn-confirm').on('click', function(){
+		$.msg.confirmation('Confirm','Apakah yakin menghapus data ini?',function(){
+			console.log('[confirm]');
+		});
+	});
+	$('#ibtn-warning').on('click', function(){
+		$.msg.confirmation('Warning','Apakah yakin menghapus data ini?',function(){
+			console.log('[warning]');
+		});
+	});
+	$('#ibtn-error').on('click', function(){
+		$.msg.confirmation('Error','Apakah yakin menghapus data ini?',function(){
+			console.log('[error]');
+		});
+	});
+});
+$(window).bind('resize', function (e) { $.msg.resize(); });
+</script>
+<style>
+</style>
+</head>
+<body class="skin-blue sidebar-mini fixed">
+<div class="content">
+	<section class="content">
+	<h1>Test Message</h1>
+	<button id="ibtn-confirm" class="btn">msg confirm</button>
+	<button id="ibtn-warning" class="btn">msg warning</button>
+	<button id="ibtn-error" class="btn">msg error</button>
+	</section>
+</div>
+</body>
+</html>

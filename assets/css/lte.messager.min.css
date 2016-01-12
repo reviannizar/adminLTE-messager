@@ -1,0 +1,7 @@
+.messager-icon { float: left; width: 32px; height: 32px; margin: 0 10px 10px 10px;}
+.messager-error { background: url('../img/messager_icons.png') no-repeat scroll -64px 0;}
+.messager-info { background: url('../img/messager_icons.png') no-repeat scroll 0 0;}
+.messager-question { background: url('../img/messager_icons.png') no-repeat scroll -32px 0;}
+.messager-warning {background: url('../img/messager_icons.png') no-repeat scroll -96px 0;}
+
+.messager-dialog{margin:auto;}
